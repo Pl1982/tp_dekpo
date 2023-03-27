@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap');
+
+@font-face {
+      font-family: 'Foobar';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Foobar Pro Regular'), url('../fonts/Foobar\ Pro-Regular.woff') format('woff');
+      font-display: swap;
+}
+
+:root {
+      --primary: #5586ed;
+      --secondary: #53d7f4;
+      --white: #091981;
+      --border-radius: 5px;
+      --box-shadow-default: 1px 1px 30px -10px rgba(0, 0, 0, .7);
+}
+
+a {
+      text-decoration: none;
+      color: whitesmoke;
+      display: inline-block;
+}
+
+li {
+      text-decoration: none;
+}
+
+/********************RESET CSS DEFAULT= TOUS LES ELEMENTS PAR DEFAUT***************************/
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+
+/****************************Navbar*******************************************************/
+.navbar {
+      background-color: var(--primary);
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 85px;
+      z-index: 9999999;
+      align-items: center;
+}
+
+.entete {
+      display: flex;
+      align-items: center;
+}
+
+
+
+
+.navbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2em;
+}
+
+
+.container {
+      width: 90%;
+      margin: auto;
+}
+
+.logo {
+      width: 50px;
+      margin: 1em;
+}
+
+/*************************************ImgBckg***************************************/
+.img_backg {
+      background-image: url('./asset/img/wheat-gf4cd0497c_1920.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: calc(100vh - 68.23px);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+
+.paragraphe h1 {
+
+      font-size: 4em;
+      color: rgb(113, 105, 105);
+
+}
+
+.paragraphe p {
+
+      font-size: 2em;
+
+      color: #53d7f4;
+}
+
+.midle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      flex-wrap: wrap;
+}
+
+.img_fond {
+
+
+      margin: 6em;
+}
+
+.midle a {
+      color: whitesmoke;
+}
+
+
+.paragraphe {
+      width: 45%;
+}
+
+.img {
+      width: 45%;
+}
+
+.btn {
+      padding: .5em 1em;
+      margin-top: 1em;
+
+      background-color: var(--white);
+      border-radius: 14px;
+}
+
+@media screen and (max-width:768px) {
+
+      .paragraphe {
+            width: 100%;
+
+      }
+
+      .img {
+            width: 100%;
+      }
+}
+
+@media screen and (max-width:768px) {
+      .banner_1 h2 {
+            margin-top: 6em;
+      }
+}
+
+@media screen and (max-width:768px) {
+      .search-form {
+            width: 100%;
+            margin-top: 5em;
+      }
+}
+
+
+/********************************Banner_1*************************/
+.banner_1 {
+      background-color: #e5e5e5;
+      font-size: 2em;
+      text-align: center;
+      padding-top: 1.5em;
+}
+
+.banner_1 p {
+      padding: .5em;
+}
+
+/**************************Banner_2*************************/
+.telephone {
+      display: flex;
+}
+
+.telephone i {
+      border-radius: 25%;
+      background-color: #53d7f4;
+      height: 100%;
+      width: 100%;
+
+      text-align: center;
+}
+
+/**************************Banner_3*************************/
+.Lorem {
+      font-size: 2em;
+      background: #e3e3e3;
+      text-align: center;
+}
+
+/**************************formulaire*************************/
+.search-form h3 {
+      background-color: #d3dfed;
+      text-align: center;
+}
+
+.search {
+      text-align: center;
+}
+
+.input-group {
+      align-items: center;
+}
+
+.search-form {
+      margin: 1em;
+      padding: 1em;
+      background: #e3e3e3;
+      border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.search-form {
+      width: 90%;
+}
+
+.input-group {
+      margin-bottom: 1em;
+      display: grid;
+      grid-template-columns: 65% 30%;
+      gap: 1em;
+}
+
+/**************************Video*************************/
+.video h3 {
+      padding: 1em;
+      background-color: #e3e3e3;
+      text-align: center;
+      font-size: 3em;
+}
+
+/**************************Paragraphe2***************************/
+.text2colonnes {
+      background-color: #e3e3e3;
+}
+
+.paragraphe2 {
+      display: flex;
+      justify-content: space-between;
+      margin: 2em auto;
+      gap: 1.5em;
+
+
+}
+
+.Lorem2 {
+      background-color: #9dabc2;
+      text-align: center;
+}
